@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        async function qiandao() {
+            for (const key in new Array(2).fill('1')) {
+                if(key == 0) {
+                   await new Promise((resolve) => setTimeout(() => {
+                    console.log('123')
+                    resolve();
+                   }, 1000))
+                }
+                // if(key == 1) {
+                //     break;
+                // }
+                console.log(key, 'key')
+            }
+        }
+
+        qiandao();
+    </script>
+</body>
+
+</html>
